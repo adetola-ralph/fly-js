@@ -240,19 +240,19 @@ flyjs.calculateWindSpeedAndDirection = function (trueAirSpeed, groundSpeed, head
 };
 
 /**
-*  Course and Ground Speed calculation given true air speed, ground speed, course and heading
+*  Heading and Ground Speed calculation given true air speed, ground speed and course
 *
 * @param  {Number} trueAirSpeed True airspeed
-* @param  {Number} heading Heading in degrees
+* @param  {Number} course Course in degrees
 * @param  {Number} windSpeed Wind speed in knots
 * @param  {Number} windDirection Wind direction in degrees
 * @param  {Number} roundTo Decimal places for rouding
 * @return {WindSpeed and Direction} Wind speed and Direction
 */
 
-flyjs.calculateHeadingAndGroundSpeed = function (trueAirSpeed, heading, windSpeed, windDirection, roundTo) {
+flyjs.calculateHeadingAndGroundSpeed = function (trueAirSpeed, course, windSpeed, windDirection, roundTo) {
 
-    WindTriangleCalculator.calculateHeadingAndGroundSpeed(trueAirSpeed, heading, windSpeed, windDirection, roundTo);
+    WindTriangleCalculator.calculateHeadingAndGroundSpeed(trueAirSpeed, course, windSpeed, windDirection, roundTo);
 
     return {
         heading: WindTriangleCalculator.getHeading(),
