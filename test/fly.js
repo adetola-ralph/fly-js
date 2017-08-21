@@ -32,8 +32,8 @@ describe('#Check API calls are accessible', function () {
     fly.kilometresTo('Miles', 1000, 2).should.equal(621.37);
   });
 
-  it('To knots to meters per second API call accessible', function () {
-    fly.knotsTo('Kilometres', 1, 3).should.equal(1.185);
+  it('To knots to kmph API call accessible', function () {
+    fly.knotsTo('KilometersPerHour', 1, 3).should.equal(1.852);
   });
 
   it('To meters per second to API call accessible', function () {
