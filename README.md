@@ -1,22 +1,18 @@
 ## fly-js v0.0.5
 A JavaScript utility library focusing on aviation.
 
-<img src='https://travis-ci.org/rheh/fly-js.svg?branch=master'>
+[![Build Status](https://travis-ci.org/adetola-ralph/fly-js.svg?branch=master)](https://travis-ci.org/adetola-ralph/fly-js)
+
 
 ## Tests
 
-Test can be run eith by:
+Test can be run either by:
 
-    npm test
-
-    ; or
-
-    mocha test
+    npm test or mocha test
 
 
 ## Continuous Integration
 Via Github's Travis.  Runs tests (mocha) and linter (jshint)
-<img src='https://travis-ci.org/rheh/fly-js.svg?branch=master'>
 
 ## API Reference
 
